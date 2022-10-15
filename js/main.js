@@ -19,5 +19,5 @@ myRequest.onreadystatechange = function () {
         }
     }
 };
-myRequest.open("GET", "../data.JSON");
+myRequest.open("GET", "../info.JSON");
 myRequest.send()
