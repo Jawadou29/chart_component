@@ -25,11 +25,12 @@ h1,h2.h3,h4,h5,h6{
     --cream-color: hsl(27, 66%, 92%);
     --very-pale: hsl(33, 100%, 98%);
 }
-.container{
+/* start chart-component  */
+.chart-component .container{
     max-width: 500px;
     margin: 10px auto;
 }
-.container .head{
+.chart-component .container .head{
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.199);
     background-color: var(--soft-color);
     padding: 20px;
@@ -40,36 +41,36 @@ h1,h2.h3,h4,h5,h6{
     justify-content: space-between;
     margin-bottom: 15px;
 }
-.container .head .logo{
+.chart-component .container .head .logo{
     display: flex;
 }
-.container .head .logo .circle{
+.chart-component .container .head .logo .circle{
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
-.container .head .logo .circle:last-child{
+.chart-component .container .head .logo .circle:last-child{
     background-color: black;
     margin-left: -20px;
 }
-.container .head .logo .circle:first-child{
+.chart-component .container .head .logo .circle:first-child{
     border: 2px solid white;
     z-index: 34;
 }
-.container .diagram{
+.chart-component .container .diagram{
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.199);
     background-color: white;
     border-radius: 20px;
     padding: 20px;
 }
-.container .diagram .figures{
+.chart-component .container .diagram .figures{
     height: 200px; 
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 40px;
 }
-.container .diagram .figures .charit{
+.chart-component  .container .diagram .figures .charit{
     width: 40px;
     background-color: var(--cyan-color);
     position: relative;
@@ -77,13 +78,13 @@ h1,h2.h3,h4,h5,h6{
     border-right: 1px solid black;
     cursor: pointer;
 }
-.container .diagram .figures .charit.bg-blue{
+.chart-component  .container .diagram .figures .charit.bg-blue{
     background-color: var(--cyan-color);
 }
-.container .diagram .figures .charit.bg-red{
+.chart-component .container .diagram .figures .charit.bg-red{
     background-color: var(--soft-color);
 }
-.container .diagram .figures .charit::after{
+.chart-component .container .diagram .figures .charit::after{
     content: attr(data-day);
     position: absolute;
     bottom: -30px;
@@ -92,7 +93,7 @@ h1,h2.h3,h4,h5,h6{
     font-weight: bold;
     color: var(--dark-medium-brown);
 }
-.container .diagram .figures .charit::before{
+.chart-component .container .diagram .figures .charit::before{
     content: attr(data-amount);
     position: absolute;
     font-size: 16px;
@@ -107,27 +108,28 @@ h1,h2.h3,h4,h5,h6{
     opacity: 0;
     transition: 0.3s;
 }
-.container .diagram .figures .charit:hover::before{
+.chart-component .container .diagram .figures .charit:hover::before{
     opacity: 1;
 }
-.container .line{
+.chart-component .container .line{
     width: 100%;
     height: 1px;
     background-color: var(--dark-medium-brown);
     margin-bottom: 10px;
 }
-.container .info{
+.chart-component .container .info{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.container .info .box .title{
+.chart-component .container .info .box .title{
     color: var(--dark-medium-brown);
 }
-.container .info .box:first-child .num{
+.chart-component .container .info .box:first-child .num{
     font-size: 30px;
     font-weight: bold;
 }
-.container .info .box:last-child .num{
+.chart-component .container .info .box:last-child .num{
     font-weight: bold;
 }
+/* end chart-component  */
